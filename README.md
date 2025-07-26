@@ -4,9 +4,9 @@
 ---
 
 # Tentang Proyek Ini
-Ini adalah portofolio pribadi Teguh Al Aliyu, seorang Junior Web Developer yang bersemangat dalam menciptakan pengalaman web yang bersih, responsif, dan mudah digunakan. Portofolio ini menampilkan berbagai proyek yang saya kerjakan, menunjukkan pemahaman saya tentang teknologi web inti seperti HTML, CSS, dan JavaScript.
+Ini adalah portofolio pribadi Teguh Al Aliyu, seorang Junior Web Developer yang bersemangat dalam menciptakan pengalaman web yang bersih, responsif, dan mudah digunakan. landing page Portofolio di buat menggunakan IBM Granite yang sedikit saya modifikasi. Dan web portofolio ini menampilkan berbagai proyek yang saya kerjakan, menunjukkan pemahaman saya tentang teknologi web inti seperti HTML, CSS, dan JavaScript serta penggunaan ai dalam mengenerate code.
 
-Tujuan dari portofolio ini adalah untuk memamerkan keahlian teknis saya, kemampuan pemecahan masalah, dan passion saya dalam membangun solusi digital yang berdampak.
+
 
 ---
 
