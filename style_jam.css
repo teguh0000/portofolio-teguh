@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282c34; /* Warna latar belakang gelap */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0; /* Warna teks terang */
+    overflow: hidden;
+}
+
+.jam-container {
+    background-color: #3a3f47; /* Warna latar belakang kontainer jam */
+    padding: 50px 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4), 0 0 60px rgba(0, 255, 255, 0.2); /* Efek cahaya neon */
+    border: 2px solid #00ffff; /* Border neon */
+}
+
+.jam {
+    font-size: 8em; /* Ukuran font besar */
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 25px rgba(0, 255, 255, 0.6); /* Efek bayangan teks neon */
+    letter-spacing: 5px; /* Jarak antar huruf */
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .jam {
+        font-size: 5em; /* Ukuran font lebih kecil untuk mobile */
+    }
+    .jam-container {
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jam {
+        font-size: 3em;
+    }
+    .jam-container {
+        padding: 20px 30px;
+    }
+}

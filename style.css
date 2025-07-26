@@ -1,0 +1,287 @@
+/* Import Google Font (optional, uncomment if you added the link in HTML) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Use Poppins if linked, fallback to Arial */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark grey for general text for better readability */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px; /* Max width for content consistency */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* --- Header Styles --- */
+header {
+    background-color: #e6f2ff; /* Lighter blue */
+    padding: 40px 0; /* Increased vertical padding */
+    text-align: center;
+    border-bottom: 1px solid #cce0ff; /* Subtle border */
+    color: #000080; /* Dark blue for header text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 3em; /* Larger font for your name */
+    color: #0056b3; /* A medium blue for main name */
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #007bff; /* Light blue for role */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px; /* More space above nav links */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px; /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    color: #007bff; /* Light blue for navigation links */
+    text-decoration: none;
+    font-weight: 600; /* Bolder text */
+    padding: 8px 0; /* Padding for click area */
+    position: relative; /* For underline effect */
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after { /* Interactive: Underline effect on hover */
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0056b3;
+    transition: width 0.3s ease-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* --- Section Styles --- */
+.content-section {
+    padding: 60px 0; /* Increased padding for sections */
+    margin: 30px auto; /* Centered sections with more margin */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-out; /* Interactive: Slight lift on scroll/hover if JS added */
+}
+
+/* Add a subtle animation to sections when they become visible (requires JS) */
+.content-section.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.content-section.fade-in.active { /* Apply this class with JavaScript */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.content-section h2 {
+    text-align: center;
+    color: #007bff; /* Light blue for section titles */
+    margin-bottom: 40px; /* More space below title */
+    font-size: 2.5em;
+    position: relative; /* For decorative line */
+}
+
+.content-section h2::after { /* Decorative line below titles */
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+}
+
+/* --- About Me Section --- */
+#about p {
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* --- Projects Section --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between project cards */
+    padding-top: 20px; /* Space from heading */
+}
+
+.project-card {
+    background-color: #f8f8ff; /* Very light blue for project cards */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e0efff; /* Light border */
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Interactive: smooth transition */
+}
+
+.project-card:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.project-card h3 {
+    color: #0056b3;
+    margin-top: 0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.project-card a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-card a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* --- Contact Section --- */
+.contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.15em;
+    color: #555;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    transition: transform 0.2s ease; /* Interactive: slight movement on hover */
+}
+
+.contact-list li:hover {
+    transform: translateX(5px);
+}
+
+.contact-list li strong {
+    color: #0056b3; /* Darker blue for labels */
+}
+
+.contact-list li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list li a:hover {
+    color: #0056b3;
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* --- Footer Styles --- */
+footer {
+    text-align: center;
+    padding: 30px; /* Increased padding */
+    background-color: #007bff; /* Main light blue for footer */
+    color: #ffffff; /* White text for footer */
+    margin-top: 60px; /* Add substantial margin to separate from last section */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 1.3em;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .content-section {
+        padding: 40px 15px;
+        margin: 20px auto;
+    }
+    .content-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    .project-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header h2 {
+        font-size: 1.1em;
+    }
+    nav ul {
+        margin-top: 20px;
+    }
+    nav ul li {
+        display: block; /* Stack nav items on very small screens */
+        margin: 10px 0;
+    }
+    .content-section {
+        padding: 30px 10px;
+    }
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+    .project-card {
+        padding: 20px;
+    }
+    .project-card h3 {
+        font-size: 1.5em;
+    }
+}
